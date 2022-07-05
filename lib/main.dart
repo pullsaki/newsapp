@@ -50,12 +50,9 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Visibility(
-              visible: true,
-              child: Text(
-                'Click the button to hide the below text.',
-                style: Theme.of(context).textTheme.headline6,
-              ),
+            Text(
+              'Click the button to hide the below text.',
+              style: Theme.of(context).textTheme.headline6,
             ),
             Container(
               height: 50,
@@ -77,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       bottomNavigationBar: BottomAppBar(
         shape: const CircularNotchedRectangle(),
-        child: Container(height: 25.0),
+        child: Container(height: 40.0),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _toggleVisibility,
